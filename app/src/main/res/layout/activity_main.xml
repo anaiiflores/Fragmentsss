@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Botón para abrir el Fragment 1 -->
+
     <TextView
         android:id="@+id/text_view_1"
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Botón para abrir el Fragment 2 -->
+
     <TextView
         android:id="@+id/text_view_2"
         android:layout_width="wrap_content"
@@ -40,7 +40,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_view_1" />
 
-    <!-- Contenedor para el primer Fragment (en modo doblado) -->
     <FrameLayout
         android:id="@+id/fragment_container_1"
         android:layout_width="0dp"
@@ -50,7 +49,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fragment_container_2" />
 
-    <!-- Contenedor para el segundo Fragment (en modo doblado) -->
     <FrameLayout
         android:id="@+id/fragment_container_2"
         android:layout_width="0dp"
@@ -60,7 +58,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/fragment_container_1" />
 
-    <!-- Contenedor para el Fragment (en modo vertical) -->
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="0dp"
